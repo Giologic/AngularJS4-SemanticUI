@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## AngularJS4 with Semantic UI Project Template
 
 You can use the [editor on GitHub](https://github.com/Giologic/AngularJS4-SemanticUI/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 

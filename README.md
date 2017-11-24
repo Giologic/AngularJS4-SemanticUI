@@ -2,34 +2,46 @@
 
 This repository is a project template for creating applications using Angular JS4 and Semantic UI CSS Framework
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Installation
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+npm install -g @angular/cli
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Creating an Angular Project for Deployment
 
-### Jekyll Themes
+```markdown
+ng new PROJECT-NAME
+cd PROJECT-NAME
+ng serve
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Giologic/AngularJS4-SemanticUI/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Default host is http://localhost:4200/
 
-### Support or Contact
+### Installing Semantic UI
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+```markdown
+npm install --save jquery
+npm install --save-dev @types/jquery
+
+npm install -g gulp
+npm install semantic-ui --save
+cd semantic/
+gulp build
+```
+
+In angular-cli.json file add these lines:
+
+```markdown
+
+"styles": [
+        "../semantic/dist/semantic.css",
+      ]
+      
+"scripts": [
+  "../node_modules/jquery/dist/jquery.min.js",
+  "../semantic/dist/semantic.js"
+]
+ ```
+
